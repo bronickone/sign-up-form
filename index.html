@@ -8,60 +8,70 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="leftSide">
-        <img class="titleImg" src="./images/roan-lavery-lvy_VvdLmnA-unsplash.jpg" alt="nice green plant">
-        
-        <div class="photoTag">
-            Photo by
-            <a href="https://unsplash.com/@roanlavery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                Roan Lavery
-            </a>
-                on
-            <a href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                Unsplash
-            </a>
+    <div class="container">
+    
+        <div class="leftSide">
+            <img class="titleImg" src="./images/olena-sergienko-r0M9HrfJMBM-unsplash.jpg" alt="nice green plant">
+    
+            <div class="photoTag">
+                    Photo by 
+                <a href="https://unsplash.com/@olenkasergienko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Olena Sergienko
+                </a> 
+                    on 
+                <a href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Unsplash
+                </a>
+  
+  
+            </div>
+            <div class="logo">
+                <img class="odinImg" src="./images/odin-lined.png" alt="Odin face">
+                <div class="odinTxt">ODIN</div>
+            </div>
         </div>
-        <div class="logo">
-            <img class="odinImg" src="./images/odin-lined.png" alt="Odin face">
-            <div class="odinTxt">ODIN</div>
+        <div class="rightSide">
+            <p class="mainTxt">
+                This is not a real online service! You know you need something like this in your life 
+                to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started!<br><br>
+                You <em>know</em> you want to.
+            </p>
+            <form action="#" method="get" class="regForm">
+                
+                <div class="textInput">
+                    <h1 class="formHead">Let's do this!</h1>
+                    <div class="formRow">
+                        <label for="firstName">FIRST NAME</label>
+                        <input id="firstName" name="firstName" placeholder="" value="" type='text' required/>
+                    </div>
+                    <div class="formRow">
+                        <label for="lastName">LAST NAME</label>
+                        <input id="lastName" name="lastName"  placeholder=""  type='text' required/>
+                    </div>
+                    <div class="formRow">
+                        <label for="email">EMAIL</label>
+                        <input id="email" name="email" type="text" placeholder='joe@example.com' required/>
+                    </div>
+                    <div class="formRow">
+                        <label for="tel">PHONE NUMBER</label>
+                        <input id="tel" name="tel" type="tel" placeholder=""  required/>
+                    </div>
+                    <div class="formRow">
+                        <label for="password">PASSWORD</label>
+                        <input id="password" name="password" placeholder=""  type="password" required/>
+                    </div>
+                    <div class="formRow">
+                        <label for="confPassword">CONFIRM PASSWORD</label>
+                        <input id="confPassword" name="confPassword" type='password' required/>
+                    </div>
+                    <div class="formRow">
+                </div>
+                   
+                </div>
+                <button>Create Account</button>
+            </form>
+            <div class="logIn">Already have account? <a href="#">Log in</a></div>
         </div>
     </div>
-    <div class="rightSide">
-        <p class="mainTxt">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, deserunt. Quo consectetur velit debitis suscipit ea similique non quam ratione? Consequatur ipsam voluptas quod molestiae sint eius fugiat vel praesentium.
-        </p>
-    </div>
-    <form action="#" method="get" class="regForm">
-        <h1 class="formHead">Let's do this!</h1>
-        <div class="formRow">
-            <label for="firstName">FIRST NAME</label>
-            <input id="firstName" name="firstName" type='text' required/>
-        </div>
-        <div class="formRow">
-            <label for="lastName">LAST NAME</label>
-            <input id="lastName" name="lastName" type='text' required/>
-        </div>
-        <div class="formRow">
-            <label for="email">EMAIL</label>
-            <input id="email" name="email" type="text" placeholder='joe@example.com' required/>
-        </div>
-        <div class="formRow">
-            <label for="tel">PHONE NUMBER</label>
-            <input id="tel" name="tel" type="tel" required/>
-        </div>
-        <div class="formRow">
-            <label for="password">PASSWORD</label>
-            <input id="password" name="password" type="password" required/>
-        </div>
-        <div class="formRow">
-            <label for="confPassword">CONFIRM PASSWORD</label>
-            <input id="confPassword" name="confPassword" type='password' required/>
-        </div>
-        <div class="formRow">
-            <button>Create Account</button>
-        </div>
-
-    </form>
-
 </body>
 </html>
