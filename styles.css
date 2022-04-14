@@ -3,7 +3,7 @@
     src: url(./fonts/Norse-Bold.otf)
 }
 * { 
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Cairo, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,9 +53,9 @@
 }
 
 .mainTxt{
-    font-weight: 700;
+    font-weight: 600;
     background-color: rgba(230, 230, 230, 0.671);
-    padding: 6.8vw 10vw 5vw 3vw;
+    padding: 3vw 10vw 3vw 3vw;
     font-size: calc(1.3vw + 5px);
 }
  
@@ -97,29 +97,31 @@
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-    width: 20vw;
-    height: 2.5vw;
+    width: 19vw;
+    height: calc(1.5vw + 10px);
     padding: 4px;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
+    --webkit-appearance: none;
+    appearance: none;
   }
 
   .formRow input[type='text']:focus,
   .formRow input[type='email']:focus,
   .formRow input[type='tel']:focus,
   .formRow input[type='password']:focus {
-    border: 3px solid #4e46c2;
-    -webkit-appearance: none;
+    border:3px solid #3025cf;
+    --webkit-appearance: none;
     appearance: none;
-    box-shadow: 3px 3px 5px rgba(139, 139, 139, 0.534); /* Remove default red glow in Firefox */
+    
     }
     
   .formRow input[type='text']:invalid,
   .formRow input[type='email']:invalid,
   .formRow input[type='tel']:invalid,
   .formRow input[type='password']:invalid {
-    border: 1px solid #eb9b9c;
+    border: 1px solid #ff3f42;
     color: #D55C5F;
-    box-shadow: none; /* Remove default red glow in Firefox */
+    
    }
 
    button{
@@ -129,7 +131,7 @@
     border-radius: 7px;
     color: white;
     font-size: 1.5vw;
-    margin: 3vw;
+    margin:2vw 3vw;
     padding: 10px 30px;
     box-shadow: 5px 5px 5px rgb(141, 141, 141);
 }
@@ -151,6 +153,13 @@ button:active{
 }
 
 @media only screen and (max-width: 700px) {
+    
+    .mainTxt, .textInput{
+        padding-left: 4vw;
+    }
+    .formRow{
+        padding: 0;
+    }
     .titleImg{
         height: auto;
         width:100vw;
@@ -186,7 +195,7 @@ button:active{
     }
    
       .formRow label {
-        font-size: calc(1.5vw + 7px);
+        font-size: calc(3vw + 7px);
       }
     
       .formRow input[type='text'],
@@ -195,22 +204,20 @@ button:active{
       .formRow input[type='password']
        {
         
-        background-color: #FFFFFF;
-        border: 1px solid #D6D9DC;
-        border-radius: 3px;
+        
         width:80vw;
-        height: 6vw;
+        height: 10vw;
         padding: 4px;
-        font-size: 4vw;
+        font-size: 6vw;
       }
       button{
-       
-        font-size: 3vw;
+        margin-top: 3vw;
+        font-size: 5vw;
         
     }
     .logIn{
-        font-size: 3vw;
-        padding-bottom: 3vw;
+        font-size: 5vw;
+        padding-bottom: 10vw;
        
     }
 
