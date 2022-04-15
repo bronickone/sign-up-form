@@ -14,3 +14,16 @@ function validatePassword(){
 
 password.onchange = validatePassword;
 confPassword.onkeyup = validatePassword;
+
+const invals = document.querySelectorAll('.inval');
+const inputs = document.querySelectorAll('.inp');
+console.log(inputs[1]);
+
+  for (let i = 0; i < inputs.length; i++){
+    console.log(inputs[i])         
+  inputs[i].addEventListener('change', () => {
+    
+      invals[i].textContent = "  ❌"
+    
+  })
+  }

@@ -44,56 +44,76 @@
                     <h1 class="formHead">Let's do this!</h1>
                     <div class="formRow">
                        
-                        <input id="firstName" name="firstName" placeholder=" " minlength = "3" type='text' required/>
+                        <div class="validRow">
+                            <input class="inp" id="firstName" name="firstName" placeholder=" " minlength = "3" type='text' required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div>
                         <label for="firstName">
-                            FIRST NAME
-                            <span class="val"> ✓</span> 
-                            
+                            FIRST NAME   
                         </label>
                     </div>
                    
                     <div class="formRow">
                         
-                        <input id="lastName" name="lastName"  placeholder=" "  minlength = "3" type='text' required/>
+                        <div class="validRow">
+                            <input id="lastName" class="inp" name="lastName"  placeholder=" "  minlength = "3" type='text' required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div>
                         <label for="lastName">
                             LAST NAME
-                            <span class="val">✓</span> 
-                            
+                           
                         </label>
                     </div>
                     <div class="formRow">
                         
-                        <input id="email" name="email" type="email" placeholder=' ' required/>
+                        <div class="validRow">
+                            <input id="email"  class="inp"  name="email" type="email" placeholder=' ' required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div>
                         <label for="email">
                             EMAIL
-                            <span class="val">✓</span> 
                             
                         </label>
                     </div>
                     <div class="formRow">
                        
-                        <input id="tel" name="tel" type="tel" placeholder=" " minlength = "7" maxlength = "10" pattern="[0-9]{7,}" required/>
+                        <div class="validRow">
+                            <input id="tel"  class="inp" name="tel" type="tel" placeholder=" " minlength = "7" maxlength = "10" pattern="[0-9]{7,}" required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div>
                         <label for="tel">
                             PHONE NUMBER
-                            <span class="val">✓</span> 
                             
                         </label>
                     </div>
                     <div class="formRow">
                         <div class="passMatch"></div>
-                        <input id="password" name="password" placeholder=" " minlength = "3" type="password" required/>
+                        <div class="validRow">
+                            <input id="password" class="inp"  name="password" placeholder=" " minlength = "3" type="password" required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div> 
                         <label for="password">
                             PASSWORD
-                            <span class="val">✓</span>  
+                            
                         </label>
+                        
                     </div>
                     
                     <div class="formRow">
                         
-                        <input id="confPassword" name="confPassword" placeholder=" "  minlength = "3" type='password' required/>
+                        <div class="validRow">
+                            <input id="confPassword"  class="inp" name="confPassword" placeholder=" "  minlength = "3" type='password' required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div>
                         <label for="confPassword">
                             CONFIRM PASSWORD
-                            <span class="val">✓</span> 
+                            
                             
                         </label>
                     </div>

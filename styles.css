@@ -86,24 +86,39 @@
     flex-direction: column-reverse;
     flex-wrap: wrap;
 }
-label .val {
+
+ .val, .inval{
     position: absolute;
-    color:green;
-    
-  }
-  
+    display: inline;
+}
+
+
+ .val {
+    color:rgb(42, 117, 42);
+}
+
+ .inval {  
+    color:rgb(158, 46, 46);
+}
  
 
-  input[type="text"]:invalid ~ label .val,
-  input[type="email"]:invalid ~ label .val,
-  input[type="tel"]:invalid ~ label .val,
-  input[type="password"]:invalid ~ label .val {
+  input[type="text"]:invalid ~ .val, input[type="text"]:valid ~ .inval,
+  input[type="email"]:invalid ~ .val, input[type="email"]:valid ~ .inval,
+  input[type="tel"]:invalid ~ .val, input[type="tel"]:valid ~ .inval,
+  input[type="password"]:invalid ~ .val, input[type="password"]:valid ~ .inval{
     opacity: 0;
   }
 
+  input[type="text"]:invalid ~  .inval, input[type="text"]:valid ~  .val,
+  input[type="email"]:invalid ~  .inval, input[type="email"]:valid ~  .val,
+  input[type="tel"]:invalid ~  .inval, input[type="tel"]:valid ~  .val,
+  input[type="password"]:invalid ~  .inval, input[type="password"]:valid ~  .val{
+    opacity: 1;
+  }
   
   .formRow label {
     font-size: calc(1vw + 2px);
+    position: relative;
   }
 
   .formRow input[type='text'],
@@ -245,6 +260,12 @@ button:active{
     .passMatch{
         font-size:4vw;
        
+    }
+    .val, .inval {
+        font-size: 5vw;
+
+        
+        
     }
 }
 
