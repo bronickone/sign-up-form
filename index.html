@@ -42,28 +42,59 @@
                 <div class="textInput">
                     <h1 class="formHead">Let's do this!</h1>
                     <div class="formRow">
-                        <label for="firstName">FIRST NAME</label>
-                        <input id="firstName" name="firstName" placeholder=" " type='text' required/>
+                       
+                        <input id="firstName" name="firstName" placeholder=" " minlength = "3" type='text' required/>
+                        <label for="firstName">
+                            FIRST NAME
+                            <span class="val"> ✓</span> 
+                            
+                        </label>
+                    </div>
+                   
+                    <div class="formRow">
+                        
+                        <input id="lastName" name="lastName"  placeholder=" "  minlength = "3" type='text' required/>
+                        <label for="lastName">
+                            LAST NAME
+                            <span class="val">✓</span> 
+                            
+                        </label>
                     </div>
                     <div class="formRow">
-                        <label for="lastName">LAST NAME</label>
-                        <input id="lastName" name="lastName"  placeholder=" "  type='text' required/>
+                        
+                        <input id="email" name="email" type="email" placeholder=' ' required/>
+                        <label for="email">
+                            EMAIL
+                            <span class="val">✓</span> 
+                            
+                        </label>
                     </div>
                     <div class="formRow">
-                        <label for="email">EMAIL</label>
-                        <input id="email" name="email" type="text" placeholder='joe@example.com' required/>
+                       
+                        <input id="tel" name="tel" type="tel" placeholder=" " minlength = "7" maxlength = "10" pattern="[0-9]{7,}" required/>
+                        <label for="tel">
+                            PHONE NUMBER
+                            <span class="val">✓</span> 
+                            
+                        </label>
                     </div>
                     <div class="formRow">
-                        <label for="tel">PHONE NUMBER</label>
-                        <input id="tel" name="tel" type="tel" placeholder=" "  required/>
+                        <div class="passMatch">*Passwords do not match</div>
+                        <input id="password" name="password" placeholder=" " minlength = "3" type="password" required/>
+                        <label for="password">
+                            PASSWORD
+                            <span class="val">✓</span>  
+                        </label>
                     </div>
+                    
                     <div class="formRow">
-                        <label for="password">PASSWORD</label>
-                        <input id="password" name="password" placeholder=" "  type="password" required/>
-                    </div>
-                    <div class="formRow">
-                        <label for="confPassword">CONFIRM PASSWORD</label>
-                        <input id="confPassword" name="confPassword" placeholder=" " type='password' required/>
+                        
+                        <input id="confPassword" name="confPassword" placeholder=" "  minlength = "3" type='password' required/>
+                        <label for="confPassword">
+                            CONFIRM PASSWORD
+                            <span class="val">✓</span> 
+                            
+                        </label>
                     </div>
                    
                 </div>

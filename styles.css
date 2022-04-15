@@ -71,7 +71,7 @@
     padding-bottom: 30px;
     padding-right: 100px;
     display: flex;
-
+    align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap;
     border: 1px solid white;
@@ -82,10 +82,25 @@
     
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
 }
+label .val {
+    position: absolute;
+    color:green;
+    
+  }
+  
+ 
 
+  input[type="text"]:invalid ~ label .val,
+  input[type="email"]:invalid ~ label .val,
+  input[type="tel"]:invalid ~ label .val,
+  input[type="password"]:invalid ~ label .val {
+    opacity: 0;
+  }
+
+  
   .formRow label {
     font-size: calc(1vw + 2px);
   }
@@ -95,7 +110,7 @@
   .formRow input[type='tel'],
   .formRow input[type='password']{ 
     background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
+    border: 1px solid #a7a7a7;
     border-radius: 3px;
     width: 19vw;
     height: calc(1.5vw + 10px);
@@ -111,8 +126,7 @@
   .formRow input[type='email']:invalid,
   .formRow input[type='tel']:invalid,
   .formRow input[type='password']:invalid {
-    border: 1px solid #ff3f42;
-    color: #D55C5F;
+    background-image: linear-gradient(to right, white, rgba(255, 0, 0, 0.384));
     
    }
 
@@ -121,11 +135,14 @@
   .formRow input[type='tel']:focus,
   .formRow input[type='password']:focus {
     outline: 2px solid rgb(0, 12, 121);
-    --webkit-appearance: none;
+    -webkit-appearance: none;
     appearance: none;
     
     }
-
+    .passMatch{
+        font-size:1.2vw;
+        color:red;
+    }
    button{
     background-color: #596D48;
     border-width: 1px;
