@@ -142,8 +142,11 @@
   .formRow input[type='email']:invalid,
   .formRow input[type='tel']:invalid,
   .formRow input[type='password']:invalid {
-    background-image: linear-gradient(to right, white, rgba(255, 0, 0, 0.384));
+    background-image: linear-gradient(to right, white, rgba(255, 0, 0, 0.144));
     
+   }
+   input:valid{
+        background-color: white !important;
    }
 
    .formRow input[type='text']:focus,
@@ -153,6 +156,7 @@
     outline: 2px solid rgb(0, 12, 121);
     -webkit-appearance: none;
     appearance: none;
+    box-shadow: 3px 3px 5px rgb(136, 136, 136);
     
     }
     .passMatch{
@@ -262,10 +266,7 @@ button:active{
        
     }
     .val, .inval {
-        font-size: 5vw;
-
-        
-        
+        font-size: 5vw;    
     }
 }
 
