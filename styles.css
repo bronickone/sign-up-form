@@ -13,7 +13,7 @@
   }
 
   .titleImg{
-    height: 100%;
+    height: auto;
     width:35vw;
 }
 .leftSide{
@@ -105,15 +105,7 @@
     appearance: none;
   }
 
-  .formRow input[type='text']:focus,
-  .formRow input[type='email']:focus,
-  .formRow input[type='tel']:focus,
-  .formRow input[type='password']:focus {
-    border:3px solid #3025cf;
-    --webkit-appearance: none;
-    appearance: none;
-    
-    }
+  
     
   .formRow input[type='text']:invalid,
   .formRow input[type='email']:invalid,
@@ -123,6 +115,16 @@
     color: #D55C5F;
     
    }
+
+   .formRow input[type='text']:focus,
+  .formRow input[type='email']:focus,
+  .formRow input[type='tel']:focus,
+  .formRow input[type='password']:focus {
+    outline: 2px solid rgb(0, 12, 121);
+    --webkit-appearance: none;
+    appearance: none;
+    
+    }
 
    button{
     background-color: #596D48;
