@@ -13,7 +13,8 @@
   }
 
   .titleImg{
-    height: auto;
+     
+    height: 100%;
     width:35vw;
 }
 .leftSide{
@@ -21,7 +22,7 @@
 }
 .photoTag{
     font-size: 1.3vw;
-    color: rgb(255, 255, 255);
+    color: rgb(59, 59, 59);
     position:absolute;
     left: 5vw;
     bottom: 20px;
@@ -173,6 +174,7 @@ button:active{
 
 @media only screen and (max-width: 700px) {
     
+    
     .mainTxt, .textInput{
         padding-left: 4vw;
     }
@@ -240,5 +242,9 @@ button:active{
        
     }
 
+    .passMatch{
+        font-size:4vw;
+       
+    }
 }
 
