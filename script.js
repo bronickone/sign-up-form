@@ -22,7 +22,7 @@ const inputFields = document.querySelectorAll('.inp');
   for (let i = 0; i < inputFields.length; i++){
         
   inputFields[i].addEventListener('change', () => {
-      invals[i].textContent = " ❌"
+      invals[i].textContent = "  ❌"
 
   })
   }

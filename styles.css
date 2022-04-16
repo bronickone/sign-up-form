@@ -19,23 +19,24 @@
 }
 .leftSide{
     position: relative;
+    background-color: rgba(230, 230, 230, 0.671);
 }
 .photoTag{
     font-size: 1.3vw;
-    color: rgb(59, 59, 59);
+    color: rgb(255, 255, 255);
     position:absolute;
     left: 5vw;
-    bottom: 20px;
+    bottom: 15px;
 }
 .photoTag a{
-    color:rgb(2, 71, 80);
+    color:rgb(255, 255, 255);
 
 }
 .logo{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.705);
+    background-color: rgba(0, 0, 0, 0.459);
     position: absolute;
-    top:18%;
+    top:19%;
     padding:10px 0;
     display: flex;
     justify-content: center;
@@ -89,12 +90,13 @@
  .validRow{
      position: relative;
      display: flex;
+     
      align-items: center;
  }
-  pre{
+ .validRow pre{
     left:16.5vw;
     position: absolute;
-    
+    display: inline;
 }
 
 
@@ -135,7 +137,7 @@
     background-color: #FFFFFF;
     border: 1px solid #a7a7a7;
     border-radius: 3px;
-    
+  
     width: 19vw;
     height: calc(1.5vw + 10px);
     padding: 4px;
@@ -153,7 +155,9 @@
     background-image: linear-gradient(to right, white, rgba(255, 0, 0, 0.144));
     
    }
-   
+   input:valid{
+        background-color: white !important;
+   }
 
    .formRow input[type='text']:focus,
   .formRow input[type='email']:focus,
@@ -170,7 +174,7 @@
         color:red;
     }
    button{
-    background-color: #596D48;
+    background-color: #536b3d;
     border-width: 1px;
     border-color: #596D48 ;
     border-radius: 7px;
