@@ -86,19 +86,26 @@
     flex-direction: column-reverse;
     flex-wrap: wrap;
 }
-
- .val, .inval{
+ .validRow{
+     position: relative;
+     display: flex;
+     align-items: center;
+ }
+  pre{
+    left:16.5vw;
     position: absolute;
-    display: inline;
+    
 }
 
 
  .val {
     color:rgb(42, 117, 42);
+    font-size: 1.6vw;
 }
 
  .inval {  
     color:rgb(158, 46, 46);
+    font-size: 1.4vw;
 }
  
 
@@ -128,6 +135,7 @@
     background-color: #FFFFFF;
     border: 1px solid #a7a7a7;
     border-radius: 3px;
+    
     width: 19vw;
     height: calc(1.5vw + 10px);
     padding: 4px;
@@ -145,9 +153,7 @@
     background-image: linear-gradient(to right, white, rgba(255, 0, 0, 0.144));
     
    }
-   input:valid{
-        background-color: white !important;
-   }
+   
 
    .formRow input[type='text']:focus,
   .formRow input[type='email']:focus,
@@ -265,8 +271,16 @@ button:active{
         font-size:4vw;
        
     }
-    .val, .inval {
-        font-size: 5vw;    
+    .validRow pre {
+        
+        left: 70vw; 
+    }
+
+    .val{
+        font-size:6vw;
+    }
+    .inval{
+        font-size: 5vw;
     }
 }
 

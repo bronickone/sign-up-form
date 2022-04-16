@@ -16,13 +16,13 @@ password.onchange = validatePassword;
 confPassword.onkeyup = validatePassword;
 
 const invals = document.querySelectorAll('.inval');
-const inputs = document.querySelectorAll('.inp');
+const inputFields = document.querySelectorAll('.inp');
 
 
-  for (let i = 0; i < inputs.length; i++){
+  for (let i = 0; i < inputFields.length; i++){
         
-    inputs[i].addEventListener('change', () => {
-      invals[i].textContent = "  ❌"
+  inputFields[i].addEventListener('change', () => {
+      invals[i].textContent = " ❌"
 
-    })
+  })
   }
